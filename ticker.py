@@ -26,20 +26,20 @@ def info():
     usage = '''NASDAQ 100 ticker tool
     ** Command line tool to look up market data about any stock in the NASDAQ100 **
     Usage
-        python ticker.py [info]                     usage manual
-        python ticker.py [list]                     lists all stocks in the NASDAQ 100
-        python ticker.py [list] [sort]              lists all stocks in the NASDAQ 100 sorted by name
-        python ticker.py [list] [sort-price]        lists all stocks in the NASDAQ 100 sorted by current price lowest to highest
-        python ticker.py [search] [term]            looks up the stock in the NASDAQ 100 and returns symbol and name of the listing
-        python ticker.py [symbol]                   get's all data about the closest matching stock to symbol
-        python ticker.py [symbol] [price]           gets price of the symbol
-        python ticker.py [symbol] [todays-high]     gets today's high
-        python ticker.py [symbol] [52-week-high]    gets 52 week high
-        python ticker.py [symbol] [previous-close]  gets previous close
-        python ticker.py [highest]                  returns stock with highest price
-        python ticker.py [lowest]                   returns stock with lowest price
-        python ticker.py [winner]                   returns stock with highest percentage gain from the previous close
-        python ticker.py [looser]                   returns stock with lowest percentage gain from the previous close'''
+        python3 ticker.py [info]                     usage manual
+        python3 ticker.py [list]                     lists all stocks in the NASDAQ 100
+        python3 ticker.py [list] [sort]              lists all stocks in the NASDAQ 100 sorted by name
+        python3 ticker.py [list] [sort-price]        lists all stocks in the NASDAQ 100 sorted by current price lowest to highest
+        python3 ticker.py [search] [term]            looks up the stock in the NASDAQ 100 and returns symbol and name of the listing
+        python3 ticker.py [symbol]                   get's all data about the closest matching stock to symbol
+        python3 ticker.py [symbol] [price]           gets price of the symbol
+        python3 ticker.py [symbol] [todays-high]     gets today's high
+        python3 ticker.py [symbol] [52-week-high]    gets 52 week high
+        python3 ticker.py [symbol] [previous-close]  gets previous close
+        python3 ticker.py [highest]                  returns stock with highest price
+        python3 ticker.py [lowest]                   returns stock with lowest price
+        python3 ticker.py [winner]                   returns stock with highest percentage gain from the previous close
+        python3 ticker.py [looser]                   returns stock with lowest percentage gain from the previous close'''
 
     print(usage)
 
