@@ -28,7 +28,7 @@ python3 ticker.py [symbol] [previous-close]  gets previous close
 python3 ticker.py [highest]                  returns stock with highest price
 python3 ticker.py [lowest]                   returns stock with lowest price
 python3 ticker.py [winner]                   returns stock with highest percentage gain from the previous close
-python3 ticker.py [looser]                   returns stock with lowest percentage gain from the previous close'''
+python3 ticker.py [looser]                   returns stock with lowest percentage gain from the previous close
 ```
 Sample Usage
 ![example usage](./sample.png)
