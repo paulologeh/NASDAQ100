@@ -1,18 +1,24 @@
+import time
 import requests
 from bs4 import BeautifulSoup
 
 
 class Marketdata:
+    '''
+    Class to scrape ticker data from yahoo finance
+    '''
+
     def __init__(self):
         pass
 
     def scrapeYahoo(self, symbol, classValue, reactid, classType='span'):
         url = 'https://finance.yahoo.com/quote/{}?p={}&.tsrc=fin-srch'.format(
-            ymbol, classValue)
+            symbol, classValue)
         response = requests.get(url, timeout=5)
         soup = BeautifulSoup(response.text, 'html.parser')
         Object = soup.find(classType, attrs={
                            'class': classValue, 'data-reactid': reactid})
+        time.sleep(0.5)  # to prevent being blocked by yahoo
         text = Object.text
         text = text.replace(',', '')
         if '-' in text:

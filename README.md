@@ -1,5 +1,12 @@
-# NASDAQ100 Winners and Loosers
+# NASDAQ 100 Ticker Analyser
 
+## Requirements
+- Python3
+- python-pip
 
-## Market Data Sources
-https://www.nasdaq.com/market-activity/stocks/amzn
+## Setup and Installation
+```
+git clone url
+pip3 -r install requirements.txt
+```
+
