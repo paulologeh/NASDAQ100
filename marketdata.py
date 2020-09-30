@@ -1,4 +1,5 @@
 import time
+import sys
 import requests
 from bs4 import BeautifulSoup
 
@@ -19,6 +20,9 @@ class Marketdata:
         Object = soup.find(classType, attrs={
                            'class': classValue, 'data-reactid': reactid})
         time.sleep(0.5)  # to prevent being blocked by yahoo
+        if Object == None:
+            sys.exit('Error! Failed To fetch market data. Please try again')
+
         text = Object.text
         text = text.replace(',', '')
         if '-' in text:
