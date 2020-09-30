@@ -32,3 +32,5 @@ python3 ticker.py [looser]                   returns stock with lowest percentag
 ```
 Sample Usage
 ![example usage](./sample.png)
+
+![example usage](./sample2.png)
